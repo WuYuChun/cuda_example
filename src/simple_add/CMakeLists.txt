@@ -1,0 +1,5 @@
+add_executable(simple_add_cpu simple_add_cpu.cpp)
+cuda_add_executable(simple_add_gpu_onethread simple_add_gpu_onethread.cu)
+cuda_add_executable(simple_add_gpu_256_threads simple_add_gpu_256_threads.cu)
+cuda_add_executable(simple_add_gpu_mult_blocks simple_add_gpu_mult_blocks.cu)
+cuda_add_executable(simple_add_gpu_mult_blocks_cudamallo simple_add_gpu_mult_blocks_cudamallo.cu)

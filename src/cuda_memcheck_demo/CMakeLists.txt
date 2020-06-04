@@ -1,0 +1,2 @@
+
+cuda_add_executable(memcheck_demo memcheck_demo.cu)

@@ -1,0 +1,2 @@
+
+cuda_add_executable(divergent_threads divergent_threads.cu)

@@ -1,0 +1,2 @@
+
+cuda_add_executable(memset_demo memset_error.cu)
