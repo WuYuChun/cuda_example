@@ -1,5 +1,12 @@
+
+message("---cuda_example: simple_add_cpu:  ${PROJECT_SOURCE_DIR}")
+
+include_directories(${PROJECT_SOURCE_DIR}/common_tool/include)
+
 add_executable(simple_add_cpu simple_add_cpu.cpp)
 cuda_add_executable(simple_add_gpu_onethread simple_add_gpu_onethread.cu)
 cuda_add_executable(simple_add_gpu_256_threads simple_add_gpu_256_threads.cu)
 cuda_add_executable(simple_add_gpu_mult_blocks simple_add_gpu_mult_blocks.cu)
 cuda_add_executable(simple_add_gpu_mult_blocks_cudamallo simple_add_gpu_mult_blocks_cudamallo.cu)
+
+target_link_libraries(simple_add_cpu common_tool)

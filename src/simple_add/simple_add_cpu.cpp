@@ -2,6 +2,8 @@
 #include <math.h>
 #include <chrono>
 
+#include "timer.hpp"
+
 // function to add the elements of two arrays
 void add(int n, float *x, float *y){
     for (int i = 0; i < n; i++) {

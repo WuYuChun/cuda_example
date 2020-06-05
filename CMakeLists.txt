@@ -3,7 +3,6 @@ project(cuda_example)
 
 find_package(CUDA REQUIRED)
 
-
 if(HAS_DIAG_COLOR_FLAG)
   if(CMAKE_GENERATOR MATCHES "Ninja")
     add_compile_options(-fdiagnostics- color=always)
